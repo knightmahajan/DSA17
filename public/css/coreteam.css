@@ -1,0 +1,205 @@
+body {
+	padding: 0;
+	margin: 0;
+	background: #FFF;
+	font-family: 'open Sans', sans-serif;
+}
+body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	text-decoration: none;
+}
+body a:hover {
+	text-decoration: none;
+}
+body a:focus, a:hover {
+	text-decoration: none;
+}
+h3{ width: 250px;
+      margin: auto;
+      
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing:1px;
+
+
+	  -moz-border-image: -moz-linear-gradient(top, #1B8165  0%, #EDEDED 100%);
+	  -webkit-border-image: -webkit-linear-gradient(top, #1B8165  0%, #EDEDED 100%);
+	  border-image: linear-gradient(to bottom, #1B8165  0%, #EDEDED5 100%);
+
+	  border-image-slice: 1;
+	}
+label.line{
+	background:#3acfd5;
+	height:3px;
+	width:250px;
+	display:block;
+	margin:20px auto;
+}
+.team{
+	padding:50px 0;
+}
+.team h3{
+	font-size:28px;
+	text-transform:uppercase;
+	color:#000;
+	font-weight:700;
+}
+.agile_team_grids{
+	margin:3em 0 0;
+}
+.agile_team_grid1{
+	padding: 1em;
+    border: 4px double #D0D0D0;
+    text-align: center;
+	margin-top:10px;
+}
+.agile_team_grid1 h4{
+	font-size:1.5em;
+	text-transform:uppercase;
+	color:#212121;
+	margin-bottom:.5em;
+}
+.agile_team_grid1 p{
+    color: #df4914;
+	font-size:14px;
+}
+.agile_team_grid_main{
+	position:relative;
+	overflow:hidden;
+	border-radius:50%;
+	box-shadow: 0px 0px 20px black;
+}
+.agile_team_grid_main img {height:350px;}
+.agile_team_grid_main .p-mask{
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.72);
+    bottom: 0%;
+    position: absolute;
+    padding:11em 0;
+    width: 100%;
+    -webkit-transform: translate3d( 0px, 100%, 0px );
+    -moz-transform: translate3d( 0px, 100%, 0px );
+    -ms-transform: translate3d( 0px, 100%, 0px );
+    -o-transform: translate3d( 0px, 100%, 0px );
+    transform: translate3d( 0px, 100%, 0px );
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+    text-align: center;
+	height:100%;
+}
+.agile_team_grid:hover .p-mask{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate3d( 0px, 0px, 0px );
+    -moz-transform: translate3d( 0px, 0px, 0px );
+    -ms-transform: translate3d( 0px, 0px, 0px );
+    -o-transform: translate3d( 0px, 0px, 0px );
+    transform: translate3d( 0px, 0px, 0px );
+}
+ul.social-icons li {
+	display:inline-block;	
+}
+ul.social-icons li  a{
+	font-size:16px;
+	color:#fff;
+	border:1px solid #fff;
+	display:inline-block;	
+	margin:0 5px;
+}
+ul.social-icons li  a .fa{
+	padding:8px 15px;
+}
+ul.social-icons li  a .fa-phone:hover{
+	color:#1da1f2;
+}
+ul.social-icons li  a .fa-facebook:hover{
+	color:#3b5998;
+}
+ul.social-icons li  a .fa-linkedin:hover{
+	color:#0077b5;
+}
+ul.social-icons li  a .fa-whatsapp:hover{
+    color:#25d366
+}
+
+
+@media(max-width:991px){
+	.agile_team_grid {
+		width: 33.3%;
+		float: left;
+	}
+	.agile_team_grid_main .p-mask {
+		padding: 9em 0;
+	}
+}
+@media(max-width:667px){
+	.agile_team_grid_main .p-mask {
+		padding: 7.5em 0;
+	}
+	.agile_team_grid1 h4 {
+		font-size: 1.3em;
+	}
+}
+
+@media(max-width:640px){
+	.agile_team_grid_main .p-mask {
+		padding: 7em 0;
+	}
+	.agile_team_grid1 p {
+		font-size: 13px;
+	}
+}
+
+@media(max-width:600px){
+	.team{
+		padding: 35px 0;
+	}
+	.team h3{
+		font-size: 25px;
+	}
+}
+
+@media(max-width:568px){
+	.agile_team_grid {
+		padding: 0 10px;
+	}
+	.agile_team_grid1 h4 {
+		font-size: 1.2em;
+	}
+}
+@media(max-width:480px){
+	.agile_team_grid {
+		width: 55%;
+		float: none;
+		padding: 0 15px;
+		margin:0 auto;
+	}
+	.agile_team_grid_main .p-mask {
+		padding: 6em 0;
+	}
+	.agile_team_grid_main img {height:auto;}
+}
+
+@media(max-width:384px){
+	.agile_team_grid {
+		width: 65%;
+	}
+}
+
+@media(max-width:320px){
+	.team h3{
+		font-size: 23px;
+	}
+	.agile_team_grid {
+		width: 75%;
+	}
+	.agile_team_grid_main .p-mask {
+		padding: 5em 0;
+	}
+}

@@ -1,0 +1,54 @@
+<%include header.ejs%>
+<div class="ui container inverted segment">
+	<h1>Admin Control Panel</h1>
+</div>
+<div class="ui container">
+	<%include messages.ejs%>
+	<div class="ui two item pointing menu">
+		<a class="item" href="/news">News</a>
+		<a class="item active" href="/events">Events</a>
+	</div>
+	<a href="/events/new" class="ui button">Add New Event</a>
+	<table class="ui very compact selectable padded table">
+	  <thead>
+	    <tr>
+	    <th>eventid</th>
+	    <th>title</th>
+	    <th>content</th>
+	    <th>date</th>
+	    <th>imgurl</th>
+	    <th>venue</th>
+	    <th>webpagelink</th>
+	    <th>time</th>
+	    <th>contact1</th>
+	    <th>contact2</th>
+	    <th>email</th>
+	    <th>Actions</th>
+	  	</tr>
+	  </thead>
+	  <tbody>
+	  	<%rows.forEach(function(row){%>
+	  		<tr>
+				<td><%=row.eventid%></td>
+				<td><%=row.title%></td>
+				<td><%=row.content.split(".").length%> Lines <hr> <%=row.content.split(" ").length%> words</td>
+				<td><%=moment(row.date).format('MMM Do, YYYY')%></td>
+				<td><a href="<%=row.imgurl%>"><%=row.imgurl.substring(0,25).concat('...')%></a></td>
+				<td><%=row.venue%></td>
+				<td><a href="<%=row.webpagelink%>"><%=row.webpagelink.length>0?row.webpagelink.substring(0,25).concat('...'):''%></a></td>
+				<td><%=row.time%></td>
+				<td><%=row.contact1%></td>
+				<td><%=row.contact2%></td>
+				<td><%=row.email%></td>
+				<td>
+					<a href="/events/edit/<%=row.eventid%>" class="ui button blue">Edit</a>
+					<a href="/events/delete/<%=row.eventid%>" class="ui button red">Delete</a>
+				</td>
+	  		</tr>
+	  	<%});%>
+	    </tr>
+	  </tbody>
+	</table>
+</div>
+<%include footer.ejs %>
+

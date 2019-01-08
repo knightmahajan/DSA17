@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DSA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+</head>
+<body>
+	<div class="ui stackable inverted borderless menu">
+		<div class="ui container">
+			<a class="header item" href="/">
+				DSA
+			</a>
+			<div class="right menu">
+				<% if (typeof isLoggedin != "undefined"){ %>
+				<a class="item" href="/news">
+					News
+				</a>
+				<a class="item" href="/events">
+					Events
+				</a>
+				<a class="item" href="/logout">
+					Logout
+				</a>
+				<% }%>
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,63 @@
+<%include header.ejs%>
+<div class="ui container inverted segment">
+	<h1>Edit News</h1>
+</div>
+	<form method="POST" class='ui container form'>
+		<% include messages.ejs%>
+		<div class="field">
+			<label>News Id</label>
+			<input type="number" name="id" value="<%=news.newsid%>" readonly>
+		</div>
+		<div class="field">
+			<label>Title*</label>
+			<input type="text" name="title" autofocus required placeholder="Title" value="<%=news.title%>">
+		</div>
+		<div class="field">
+		    <label>Content*</label>
+		    <textarea required name="content"><%=news.content%></textarea>
+		</div>
+		<div class="equal width fields">
+			<div class="field">
+				<label>Date</label>
+				<input type="date" name="date" required value="<%=moment(news.date).format("YYYY-MM-DD")%>">
+			</div>
+			<div class="field">
+				<label>Image URL</label>
+				<input type="text" name="imgurl" placeholder="Title" value="<%=news.imgurl%>">
+			</div>
+		</div>
+		<div class="equal width fields">
+			<div class="field">
+				<label>Venue</label>
+				<input type="text" name="venue" value="<%=news.venue%>">
+			</div>
+			<div class="field">
+				<label>Webpage URL</label>
+				<input type="text" name="webpagelink" value="<%=news.webpagelink%>">
+			</div>
+		</div>
+		<div class="equal width fields">
+			<div class="field">
+				<label>Time</label>
+				<input type="text" name="time" value="<%=news.time%>">
+			</div>
+			<div class="field">
+				<label>Contact 1</label>
+				<input type="text" name="contact1" value="<%=news.contact1%>">
+			</div>
+		</div>
+		<div class="equal width fields">
+			<div class="field">
+				<label>Contact 2</label>
+				<input type="text" name="contact2" value="<%=news.contact2%>">
+			</div>
+			<div class="field">
+				<label>Email</label>
+				<input type="email" name="email" value="<%=news.email%>">
+			</div>
+		</div>
+		<button class="ui button blue">Edit</button>
+		<a class="ui button red" href="/news">Back</a>
+	</form>
+<%include footer.ejs%>
+

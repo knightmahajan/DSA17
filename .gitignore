@@ -1,0 +1,3 @@
+.dsa-aws.pem
+*.json
+/node_modules

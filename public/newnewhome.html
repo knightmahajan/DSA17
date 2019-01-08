@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DSA</title>
+	<style type="text/css">
+		.button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+	</style>
+	<script src="js/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/cust.css">
+	<!-- new -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/flexslider.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/font-icon.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<script src="js/bootstrap.min.js"></script> 
+		<script src="js/jquery.flexslider-min.js"></script> 
+		<script src="js/jquery.fancybox.pack.js"></script> 
+		<script src="js/retina.min.js"></script> 
+		<script src="js/main.js"></script> 
+		<script type="text/javascript">
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>
+	<!-- new -->
+
+	<style type="text/css">
+		#call-us{
+			border: 3px solid white;
+			margin-top: 2%;
+			margin-bottom:2%;
+			text-align: center;	
+			color: white;
+		}
+		#line{
+			color: blue;
+		}
+	</style>
+
+</head>
+<body >
+<!-- <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Register For Impact - The SRM National Debate’18</h4>
+            </div>
+            <div class="modal-body">
+                <p>Presenting to you the first edition of IMPACT. A national level debate contest, organised by The Literary Club, right here at SRM Institute of Science and Technology. It's open to all students pursuing their undergraduate studies.</p>
+                
+                    <button type="submit" class="btn btn-primary" style="color: white"><a href="SRMNationalDebate/index.html">Register Here</a></button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+	<!-- New Header -->
+	<section class="banner" role="banner" style="background-image:url(images/home.jpg);min-height: 100%">
+	  <header id="header">
+	    <div class="header-content clearfix"> <a class="logo" href="http://www.srmuniv.ac.in/"><img src="images/logo.png"></a>
+	      <nav class="navigation" role="navigation">
+	        <ul class="primary-nav">
+	          <li><a href="/home">Home</a></li>
+	          <li><a href="/about">About</a></li>
+	          <li><a href="/coreteam">Core Teams</a></li>
+	          <li><a href="/clubs">Clubs</a></li>
+	          <li><a href="/houses">Houses</a></li>
+	          <li><a href="/counselling">Counselling</a></li>
+	          <li><a href="/gallery">Gallery</a></li>
+	          <li><a href="/newsletter">News letter</a></li>
+	          <!-- <li><a href="/contactus">Contact Us</a></li> -->
+	        </ul>
+	      </nav>
+	      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+	  </header>
+	  <div class="container">
+	    <div class="col-md-10 col-md-offset-1">
+	      <div class="banner-text text-center">
+	    	<div style="text-align: center;">
+	    		<img src="images/dsa1.png" style="margin-top: 10px;" alt="">
+	    	</div>
+	    		<h1 style="font-size: 3em" class="ui center aligned inverted" id="dsatitle-main">DIRECTORATE OF STUDENT AFFAIRS</h1> <br /><br />
+	    		<!-- <h1 class="ui center aligned inverted" id="dsatitle-main" ></h1><br> -->
+	    		<span>
+	    		 <a href="#app" class="button">News Feed</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	    		 <a href="#calendar" class="button">Events</a>
+				</span>
+	    </div>
+	  </div>
+	</section>
+	<!-- New Header -->
+	<div class="ui" id="app">
+		<!-- NewsFeed start -->
+		<div class="" style="background: #EDEDED;padding-top:15px;padding-bottom: 15px">
+			<h2 id="title-graident-box" style="text-align:center;width: 50%;margin-left:auto;margin-right:auto;color: #446ccf">NEWSFEED</h2>
+		</div>
+		<div class="ui cards" style="background: #EDEDED;margin-bottom: 25px">
+			<a :href='/blog/+news.newsid' class="ui raised card" style="margin: 35px;height: 500px !important" v-for="news in newz">
+				<img class="ui medium centered image" style="width: 100%;height:200px;object-fit:cover;" :src="news.imgurl">
+				<div class="content">
+					<div class="header">{{news.title.substr(0,50)+"..."}}</div>
+					<div class="meta" v-if="news.date">
+						{{moment(news.date).format("MMM Do,YYYY")}}
+					</div>
+					<div class="description">{{news.content.substr(0,200)+'...'}}</div>
+					<!-- <div class="extra content">
+						<div v-if="news.venue">
+							Venue: {{news.venue}}	
+						</div>
+						<div v-if="news.time">Time: {{news.time}}</div>
+						<div v-if="news.webpagelink"><a :href="news.webpagelink">Visit Us</a></div>
+						<div v-if="news.contact1">{{news.contact1}}</div>
+						<div v-if="news.contact2">{{news.contact2}}</div>
+						<div v-if="news.email">Email: {{news.email}}</div>
+					</div> -->
+				</div>
+			</a>
+		</div>
+		<!-- NewsFeed End -->
+		<!-- Events Start-->
+		<div class="ui padded grid stackable" id="calendar">
+			<div style="color:black; background: #446ccf" class="eight wide column" id="event">
+				<div class="ui container" style="background: #446ccf">
+					<h2 class="shadow-down"><span>EVENT DETAILS</span></h2><br>
+					<p class="event-title" style="color:white"><span class="event-span">{{selectedEvent.title}}</span></p>
+					<img v-if="selectedEvent.imgurl" class="ui right floated medium image rounded" :src="selectedEvent.imgurl" style="box-shadow: 0 0 10px rgba(0,0,0,0);border:2px solid white">
+					<p style="color:white">{{selectedEvent.content}}</p>
+					<p style="color:white" v-if="selectedEvent.date">
+						Date: {{moment(selectedEvent.date,"DDMMYYYY").format("MMM Do, YYYY")}}
+					</p>
+					<p style="color:white" v-if="selectedEvent.venue">Venue: {{selectedEvent.venue}}</p>
+					<p><a v-if="selectedEvent.webpagelink" :href="selectedEvent.webpagelink" style="color: #77C1FF" >Visit: {{selectedEvent.webpagelink}}</a></p>
+					<p style="color:white" v-if="selectedEvent.time">Time: {{selectedEvent.time}}</p>
+					<p style="color:white" v-if="selectedEvent.contact1">{{selectedEvent.contact1}}</p>
+					<p style="color:white" v-if="selectedEvent.contact2">{{selectedEvent.contact2}}</p>
+					<p style="color:white" v-if="selectedEvent.email">Email: {{selectedEvent.email}}</p>
+				</div>
+			</div>
+			<div class="eight wide column">
+				<div class="ui seven column center aligned grid">
+					<div class="ui sixteen wide column center aligned">
+							<div class="ui icon left floated button" @click=prevMonth><i class="chevron left icon"></i></div>
+							<p class="calender-title" id="title-graident-box"><span class="event-span" style="color: #2292CF;">{{currentMonth.toUpperCase()}} {{currentYear}}</span></p>
+							<div class="ui icon right floated button" @click=nextMonth><i class="chevron right icon"></i></div>
+					</div>
+					<div class="middle aligned column"><b>SUN</b></div>
+					<div class="middle aligned column"><b>MON</b></div>
+					<div class="middle aligned column"><b>TUE</b></div>
+					<div class="middle aligned column"><b>WED</b></div>
+					<div class="middle aligned column"><b>THU</b></div>
+					<div class="middle aligned column"><b>FRI</b></div>
+					<div class="middle aligned column"><b>SAT</b></div>
+					<div class="middle aligned column" v-for="day in firstemptyDays"></div>
+					<div class="middle aligned column" v-for="day in daysInMonth">
+						<span class="ui circular button label" id="event" :data-tooltip="eventsThisMonth[day].title" data-inverted="" data-position="top right" v-if="eventsThisMonth[day]" @click="selectedEvent=eventsThisMonth[day]">{{day}}</span>				
+						<span class="ui circular label" v-else-if="realtoday.date()==day && realtoday.year()==currentYear && realtoday.format('MMM')==currentMonth">{{day}}</span>
+						<span v-else>{{day}}</span>				
+					</div>
+					<div class="middle aligned column" v-for="day in lastemptyDays"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Events End-->
+	</div>
+	<!-- Google Maps -->
+	<div class="ui grid stackable" id="map" style="background-color: #f2f2f2;height: 50vh">
+		<div class="sixteen wide column">  
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.311991861356!2d80.04309141478392!3d12.823104690953395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f70d37c35faf%3A0x150be8ecf0c8f817!2sSRM+University!5e0!3m2!1sen!2sin!4v1510247039077" frameborder="0" style="border:0 ;height:100%;width:100%" allowfullscreen></iframe>
+		</div>
+	</div>
+	<!-- Google Maps End -->
+	<!-- Contact Us -->
+	<div class="ui padded grid stackable" id="map" style="background-color: #404040">
+		<div class="one wide column"></div>
+		<div class="four wide column" id="call-us">
+				<h1 style="color: #42C0FB;"><i class="fa fa-phone"></i></h1>
+				<h2 style="color:white;">Call Us</h2>
+				<hr width="25%;" id="line">
+				<strong><a href="tel:08056004024" style="color:white;margin-top: 10%;">Anirudh Nair : +91 8547742277</a></strong>
+				<br>
+				<strong><a href="tel:08939550542" style="color:white;margin-top: 2%;">Shivani Damisetti : +91 9962716063</a></strong>
+		</div>
+		<div class="one wide column"></div>
+		<div class="four wide column" id="call-us">
+			<h1 style="color: #42C0FB;"><i class="fa fa-envelope-o"></i></h1>
+			<h2 style="color:white;">E-mail Address</h2>
+			<hr width="25%;">
+			<strong><p style="color:white;margin-top: 10%;">srmmilan2018@gmail.com</p></strong><br><br>
+		</div>
+		<div class="one wide column"></div>
+		<div class="four wide column" id="call-us">
+			<h1 style="color: #42C0FB;"><i class="fa fa-map-marker"></i></h1>
+			<h2 style="color:white;">Location</h2>
+			<hr width="25%;" style="color: blue;">
+			<strong><p style="color:white;margin-top: 10%;">Room No.8,4th Floor,University Building,<br> SRM University, Kattankulathur</p></strong><br>
+		</div>
+		<div class="one wide column"></div>
+	</div>
+	<!-- Contact Us End -->
+<!-- Footer -->
+	<div class="ui black inverted center aligned segment" style="border-radius: 0;margin: 0">
+		<a href="https://www.facebook.com/SRMUDSA/"><i class="facebook large icon"></i></a>|
+      <a href="https://www.instagram.com/srmudsa/"><i class="instagram large icon"></i></a>|
+      <a href="https://www.youtube.com/channel/UCUIrUI90eAPPowez3zKAftg"><i class="youtube play icon large"></i></a>
+      <p class="m-0 text-center text-white">Copyright &copy; DSA Tech Team</p>
+	</div>
+	<script type="text/javascript" src="js/apps.js"></script>
+	<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <style>
+    	.ui.raised.card.slick-slide{
+    		height: 500px;
+    	}
+    </style>
+</body>
+</html>

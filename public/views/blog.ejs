@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DSA</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="../slick/slick.min.js"></script>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/cust.css">
+	<!-- new -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/flexslider.css">
+		<link rel="stylesheet" href="../css/jquery.fancybox.css">
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/responsive.css">
+		<link rel="stylesheet" href="../css/font-icon.css">
+		<link rel="stylesheet" href="../css/animate.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<script src="../js/bootstrap.min.js"></script> 
+		<script src="../js/jquery.flexslider-min.js"></script> 
+		<script src="../js/jquery.fancybox.pack.js"></script> 
+		<script src="../js/retina.min.js"></script> 
+		<script src="../js/main.js"></script> 
+	<!-- new -->
+
+	<style type="text/css">
+		#call-us{
+			border: 3px solid white;
+			margin-top: 2%;
+			margin-bottom:2%;
+			text-align: center;	
+			color: white;
+		}
+		#line{
+			color: blue;
+		}
+	</style>
+</head>
+<body >
+	<!-- New Header -->
+<!-- 	<section class="banner" role="banner" style="background-image:url(../images/home.jpg)">
+	  <header id="header">
+	    <div class="header-content clearfix"> <a class="logo" href="index.html"><img src="/images/logo.png"></a>
+	      <nav class="navigation" role="navigation">
+	        <ul class="primary-nav">
+	          <li><a href="/home">Home</a></li>
+	          <li><a href="/about">About</a></li>
+	          <li><a href="/coreteam">Teams</a></li>
+	          <li><a href="/clubs">Clubs</a></li>
+	          <li><a href="/houses">Houses</a></li>
+	          <li><a href="/counselling">Counselling</a></li>
+	          <li><a href="/gallery">Gallery</a></li>
+	          <li><a href="/contactus">Contact Us</a></li>
+	        </ul>
+	      </nav>
+	      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+	  </header>
+	  <div class="container">
+	    <div class="col-md-10 col-md-offset-1">
+	      <div class="banner-text text-center">
+	    	<div style="text-align: center;">
+	    		<img src="/images/dsa.png" style="margin-top: 75px;" alt="">
+	    	</div>
+	    		<h1 class="ui center aligned inverted" id="dsatitle-main" style="font-family: Helvetica;">DIRECTORATE OF </h1>
+	    		<h1 class="ui center aligned inverted" id="dsatitle-main" > STUDENT AFFAIRS</h1>
+	    </div>
+	  </div>
+	</section> -->
+
+
+	<div class="ui container">
+		<div class="h2"><%=news.title%></div>
+		<i class="calendar icon"></i><label><%=moment(news.date).format("MMM Do, YYYY")%></label>
+		<%if(news.imgurl){%>
+			<img src="<%=news.imgurl%>" class="ui medium image centered rounded">
+		<%}%>
+		<p style=" white-space: pre-line;"><%-news.content%></p>
+		<%if(news.venue){%>
+			<h4>Venue - <%=news.venue%></h4>
+		<%}%>
+		<%if(news.time){%>
+			<h4>Time - <%=news.time%></h4>
+		<%}%>
+		<%if(news.email){%>
+			<h4>Email - <%=news.email%></h4>
+		<%}%>
+		<%if(news.webpagelink){%>
+			<h4>Visit Us - <%=news.webpagelink%></h4>
+		<%}%>
+		<%if(news.contact1){%>
+			<h4><%=news.contact1%></h4>
+		<%}%>
+		<%if(news.contac2){%>
+			<h4><%=news.contact2%></h4>
+		<%}%>
+	</div>
+
+
+
+<!-- Footer -->
+	<div class="ui black inverted center aligned segment" style="border-radius: 0;margin: 0">
+		<i class="facebook large icon"></i>|
+		<i class="instagram large icon"></i>|
+		<i class="youtube play icon large"></i>
+	</div>
+</body>
+</html>
